@@ -1,0 +1,287 @@
+:root {
+    /* --color1: #c3d2e5;
+    --color2: #3e4755;
+    --color3: #fe5201;
+    --color4: #6d93ca; */
+    /* --color1: #366D73;
+    --color2: #9FB9BF;
+    --color3: #F26835;
+    --color4: #6d93ca; */
+
+    /*
+    #BACDD9
+    #049DD9
+    #5FB6D9
+    #BF8D30
+    #D99441 
+
+    #FFBC40
+     */
+    --color1: #FFBC40;
+    --color2: #049DD9;
+
+    --bgcolor1: white;
+    --footercolor: #049DD9;
+
+    --textcolor1: #FFBC40;
+    --textcolor2: #049DD9;
+    --textcolor3: #5FB6D9;
+    --linkcolor: #E1E3E2;
+    
+
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.logo {
+    /* background-color: var(--color3); */
+    width: 75px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo > img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 10;
+}
+
+/* --------------------------------- */
+
+html {
+    font-family: 'roboto', arial, serif;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(rgba(54,109,115, 0.5), rgba(0,0,0,0));
+    height: 100px;
+    width: 100%;
+}
+
+header .logo {
+    margin-left: 30px;
+}
+
+.logo div {
+    color: var(--textcolor1);
+    font-size: 36px;
+    font-weight: 300;
+    display: inline-block;
+    margin-left: 120px;
+}
+
+ul.menu {
+    display: flex;
+}
+
+header .menu li a {
+    padding: 10px 30px;
+    color: var(--linkcolor);
+    transition: transform 0.3s ease;
+    display: inline-block;
+    position: relative;
+}
+
+header .menu li a::after {
+    content: ''; /* Empty content for the pseudo-element */
+    position: absolute;
+    bottom: 4px; /* Align at the bottom of the text */
+    left: 50%; /* Start the underline in the center */
+    width: 0; /* Initially no underline */
+    transform: translateX(-50%); /* Center the underline */
+    height: 2px; /* Thickness of the underline */
+    background-color: var(--linkcolor); /* Match the text color or any color you want */
+    transition: width 0.3s ease; /* Smooth animation for the underline */
+}
+
+header .menu li a:hover::after {
+    width: calc(100% - 60px); /* Set the desired width of the underline (e.g., 50% of the container) */
+}
+/* 
+header .menu li a:hover {
+    transform: scale(1.05);
+} */
+
+header .menu li:first-child a {
+    color: var(--textcolor1)
+}
+
+header .menu li:first-child a::after {
+    background-color: var(--textcolor1); /* Match the text color or any color you want */
+}
+
+.main-panel {
+    /* height: 524px; */
+    height: calc(100vh - 100px);
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color1);
+    opacity: 0.1;
+    z-index: -1;
+}
+
+.main-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+
+
+.main-panel .main-card {
+    width: 80%;
+    margin-top: -100px;
+    text-align: center;
+}
+
+.main-panel .main-card h1 {
+    font-size: 96px;
+    height: 96px;
+    color: var(--textcolor1);
+    font-weight: 900;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.main-panel .main-card h3 {
+    font-size: 32px;
+    height: 38px;
+    font-weight: 500;
+    color: var(--textcolor2);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.main-panel .main-card .button:hover {
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.main-panel > img {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: -2;
+}
+
+.text-panel-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-panel {
+    width: 1300px;
+    height: calc(100% * 479 / 1200);
+    background-color: var(--bgcolor1);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+.text-panel > * {
+    width: 40%;
+    margin: 5% 0;
+}
+
+.text-panel > .text {
+    flex: 0 1 auto;
+}
+
+.text-panel .text h2 {
+    font-size: 48px;
+    font-weight: bold;
+    color: var(--textcolor1)
+}
+
+.text-panel .text h3 {
+    font-size: 32px;
+    margin-top: 10px;
+    color: var(--textcolor2);
+}
+
+.text-panel .text p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 20px;
+    color: var(--textcolor3)
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0 50px;
+    background-color: var(--footercolor);
+}
+
+footer .logo > div {
+    margin-left: 0;
+    /* background-color: red; */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    color: var(--linkcolor);
+}
+
+footer .menu {
+    margin-top: 20px;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer .menu li {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .menu li a {
+    color: var(--linkcolor);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease;
+}
+
+footer .menu li a:hover {
+    opacity: 0.8;
+}

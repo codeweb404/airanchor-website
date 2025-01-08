@@ -1,0 +1,15 @@
+header {
+    background: linear-gradient(rgba(54,109,115,0.3), rgba(0,0,0,0));
+}
+
+.main-panel .main-card h1 {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.main-panel .main-card p {
+    font-size: 18px;
+    height: 25px;
+    font-weight: 500;
+    color: var(--textcolor3);
+}

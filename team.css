@@ -1,0 +1,67 @@
+.team-panel-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.team-panel {
+    width: 1300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-panel > h1 {
+    color: var(--textcolor1);
+    font-size: 36px;
+    width: 100%;
+    font-weight: 500;
+    margin: 40px 0 15px 30px;
+}
+
+.profile-card-container {
+    margin: 10px 0 40px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-card {
+    width: 46%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px;
+    /* border: 1px solid var(--linkcolor); */
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+}
+
+.profile-card .text-container {
+    margin-left: 15px;
+    height: 100%;
+}
+
+.profile-card .text-container h2 {
+    color: var(--textcolor1);
+    font-weight: bold;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.profile-card .text-container h3 {
+    color: var(--textcolor2);
+    font-size: 32px;
+    margin-left: 3px;
+    margin-bottom: 15px;
+}
+
+.profile-card .text-container p {
+    color: var(--textcolor3);
+    font-size: 18px;
+    margin-left: 6px;
+    margin-bottom: 10px;
+}

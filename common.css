@@ -239,10 +239,10 @@ header .menu li:first-child a::after {
 }
 
 .text-panel .text p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 20px;
     margin-top: 20px;
-    color: var(--textcolor3)
+    color: var(--textcolor2)
 }
 
 footer {

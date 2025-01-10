@@ -2,3 +2,13 @@
     width: 100%;
     height: calc(100% / 3);
 }
+
+.main-panel .main-card {
+    font-size: 96px;
+    height: 96px;
+    color: var(--textcolor1);
+    font-weight: 900;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    margin-left: 750px;
+    /* margin-top: 350px; */
+}

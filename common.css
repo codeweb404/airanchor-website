@@ -209,7 +209,7 @@ header .menu li:first-child a::after {
 }
 
 .text-panel {
-    width: 1300px;
+    width: 1350px;
     height: calc(100% * 479 / 1200);
     background-color: var(--bgcolor1);
     display: flex;
@@ -218,7 +218,7 @@ header .menu li:first-child a::after {
 }
 
 .text-panel > * {
-    width: 40%;
+    width: 45%;
     margin: 5% 0;
 }
 
